@@ -1,0 +1,59 @@
+graph: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb"
+node: { title: "microbit__time__delay_ms" label: "Delay_Ms\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-time.ads:41:14" shape : ellipse }
+node: { title: "microbit__time__clock" label: "Clock\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-time.ads:39:13" shape : ellipse }
+node: { title: "microbit__ios__set" label: "Set\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-ios.ads:52:14" shape : ellipse }
+node: { title: "microbit__ios__write" label: "Write\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-ios.ads:64:14" shape : ellipse }
+node: { title: "nav__turn_around" label: "Turn_Around\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:172:4\n24 bytes (static)" }
+edge: { sourcename: "nav__turn_around" targetname: "microbit__time__delay_ms" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:181:23" }
+edge: { sourcename: "nav__turn_around" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:179:7" }
+edge: { sourcename: "nav__turn_around" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:178:10" }
+node: { title: "nav__turn_right" label: "Turn_Right\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:152:4\n32 bytes (static)" }
+edge: { sourcename: "nav__turn_right" targetname: "nav__stop" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:161:10" }
+edge: { sourcename: "nav__turn_right" targetname: "microbit__time__delay_ms" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:160:23" }
+edge: { sourcename: "nav__turn_right" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:159:10" }
+edge: { sourcename: "nav__turn_right" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:158:10" }
+edge: { sourcename: "nav__turn_right" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:157:26" }
+edge: { sourcename: "nav__turn_right" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:153:7" }
+node: { title: "nav__turn_left" label: "Turn_Left\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:133:4\n32 bytes (static)" }
+edge: { sourcename: "nav__turn_left" targetname: "nav__stop" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:142:10" }
+edge: { sourcename: "nav__turn_left" targetname: "microbit__time__delay_ms" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:141:23" }
+edge: { sourcename: "nav__turn_left" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:140:10" }
+edge: { sourcename: "nav__turn_left" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:139:10" }
+edge: { sourcename: "nav__turn_left" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:138:26" }
+edge: { sourcename: "nav__turn_left" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:134:7" }
+node: { title: "nav__drive_backward" label: "Drive_Backward\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:119:4\n32 bytes (static)" }
+edge: { sourcename: "nav__drive_backward" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:125:10" }
+edge: { sourcename: "nav__drive_backward" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:124:10" }
+edge: { sourcename: "nav__drive_backward" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:123:26" }
+edge: { sourcename: "nav__drive_backward" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:120:7" }
+node: { title: "nav__drive_forward__2" label: "Drive_Forward\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:105:4\n32 bytes (static)" }
+edge: { sourcename: "nav__drive_forward__2" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:111:10" }
+edge: { sourcename: "nav__drive_forward__2" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:110:10" }
+edge: { sourcename: "nav__drive_forward__2" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:109:26" }
+edge: { sourcename: "nav__drive_forward__2" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:106:7" }
+node: { title: "nav__stop__2" label: "Stop\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:91:4\n32 bytes (static)" }
+edge: { sourcename: "nav__stop__2" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:97:10" }
+edge: { sourcename: "nav__stop__2" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:96:10" }
+edge: { sourcename: "nav__stop__2" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:95:26" }
+edge: { sourcename: "nav__stop__2" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:92:7" }
+node: { title: "nav__drive_forward" label: "Drive_Forward\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:85:4\n8 bytes (static)" }
+edge: { sourcename: "nav__drive_forward" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:88:7" }
+edge: { sourcename: "nav__drive_forward" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:87:7" }
+node: { title: "nav__stop" label: "Stop\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:79:4\n8 bytes (static)" }
+edge: { sourcename: "nav__stop" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:82:7" }
+edge: { sourcename: "nav__stop" targetname: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:81:7" }
+node: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2__2" label: "Write_To_M2\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:70:4\n16 bytes (static)" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:75:19" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:74:19" }
+node: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1__2" label: "Write_To_M1\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:61:4\n16 bytes (static)" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:66:19" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:65:19" }
+node: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" label: "Write_To_M2\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:48:4\n16 bytes (static)" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:55:19" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:54:19" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m2" targetname: "microbit__ios__write" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:52:19" }
+node: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" label: "Write_To_M1\n/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:37:4\n16 bytes (static)" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:44:19" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:43:19" }
+edge: { sourcename: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:nav__write_to_m1" targetname: "microbit__ios__write" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/nav.adb:41:19" }
+}

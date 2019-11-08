@@ -1,0 +1,2 @@
+main.adb:89:05: warning: variable "testvalue" is never read and never assigned
+main.adb:195:05: warning: unreachable code

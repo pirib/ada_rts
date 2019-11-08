@@ -1,0 +1,120 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U hps%b			hps.adb			12e097de OO PK IU
+
+U hps%s			hps.ads			8e24a59e EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W chore%s		chore.adb		chore.ali
+W external_package%s	external_package.adb	external_package.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-inteio.ads		20190518041256 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-tiinio.ads		20190518041254 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20190518041255 eff36322 ada.unchecked_deallocation%s
+D chore.ads		20191104102427 11f70123 chore%s
+D external_package.ads	20191104060112 b0fd96c2 external_package%s
+D hps.ads		20191104102107 77916eb6 hps%s
+D hps.adb		20191104104158 6571f968 hps%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-string.ads		20190518041255 8fe54fb7 system.strings%s
+D s-ststop.ads		20190518041254 5fbf1b38 system.strings.stream_ops%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [run hps 19 15 none]
+G c Z s s [Tchore_queueBIP hps 10 5 none]
+G c Z s s [scheduleDA hps 12 10 none]
+G c Z s s [scheduleDF hps 12 10 none]
+G c Z s s [scheduleIP hps 12 10 none]
+G r c none [run hps 19 15 none] [execute chore 18 14 none]
+G r s chore [Tchore_queueBIP hps 10 5 none] [choreIP chore 7 10 none]
+G r s chore [scheduleIP hps 12 10 none] [choreIP chore 7 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|2r6 3r6
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 13|3w10
+X 7 a-textio.ads
+57K13*Text_IO 727e16 13|2w10
+X 11 chore.ads
+1K9*chore 20e10 13|1w6 1r17 10r42
+7R10*chore 16e15 13|10r48
+10i9*id{integer} 14|30r55 51r55 68r55
+11i9*deadline{integer} 14|29r75 50r75 67r75 83r75 97r75
+18V14*execute{integer} 14|29s46 50s46 67s46 83s46 97s46
+X 12 external_package.ads
+1K9*external_package 9e21 13|4w6
+X 13 hps.ads
+7K9*HPS 22l5 22e8 14|1b14 117l5 117t8
+10A10*chore_queue(11|7R10)<integer> 14r23
+12R10*schedule 16e15 19p15 19r34 14|3r33
+14a9*major_queue{10A10} 14|29m31 29r60 30r40 50m31 50r60 51r40 67m31 67r60
+. 68r40 83m31 83r60 97m31 97r60
+19U15*run 19=20 14|3b14 114l8 114t11
+19r20 Self{12R10} 14|3b19 29m26 29r26 29r55 30r35 50m26 50r26 50r55 51r35
+. 67m26 67r26 67r55 68r35 83m26 83r26 83r55 97m26 97r26 97r55
+X 14 hps.adb
+6i7 NB_q{integer} 13r37 24r32 40r49 54r39 71r39 86r39 100r39
+7i7 NH_q{integer} 33r39 45r35 57r49
+8i7 SC_q{integer} 36r39 62r35 74r49
+9i7 TL_q{integer} 78r35 89r49
+10i7 TR_q{integer} 93r35 103r49
+13i7 current_queue_id{integer} 24r13 33m19 36m19 40r29 45r16 54m19 57r29
+. 62r16 71m19 74r29 78r16 86m19 89r29 93r16 100m19 103r29
+15i7 Answer{integer} 29m16 32r43 35r46 50m16 53r43 67m16 70r43 83m16 85r19
+. 97m16 99r19
+16i7 current_task_id{integer} 30m16 32r19 35r22 51m16 53r19 68m16 70r19
+26l13 NB 40r21 41l22 41e24
+27i17 I{integer} 29r43 29r72 30r52
+47l13 NH 57r21 58l22 58e24
+48i17 I{integer} 50r43 50r72 51r52
+64l13 SC 74r21 75l22 75e24
+65i17 I{integer} 67r43 67r72 68r52
+80l13 TL 89r21 90l22 90e24
+81i17 I{integer} 83r43 83r72
+94l13 TR 103r21 104l22 104e24
+95i17 I{integer} 97r43 97r72
+

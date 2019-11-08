@@ -1,0 +1,30 @@
+[MAPPING FILE]
+/tmp/GNAT-TEMP-000004.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2019
+[MAIN BASE NAME]
+sensor
+[COMPILER PATH]
+/home/nico/opt/GNAT/2019-arm-elf/bin/arm-eabi-gcc
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+--RTS=/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/
+-mlittle-endian
+-mthumb
+-msoft-float
+-mcpu=cortex-m0
+[MAIN DEPENDENCY FILE]
+/home/nico/Downloads/Real-Time-Systems/driving/obj/sensor.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=arm-eabi-
+--RTS=/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/
+[PROJECT FILES]
+/home/nico/Downloads/Real-Time-Systems/driving/digital_out.gpr
+20191105145153
+/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/microbit_zfp.gpr
+20191028100244

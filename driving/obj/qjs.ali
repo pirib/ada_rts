@@ -1,0 +1,149 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U qjs%b			qjs.adb			80debdc0 NE OO PK IU
+W microbit%s		microbit.ads		microbit.ali
+W microbit.console%s	microbit-console.adb	microbit-console.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U qjs%s			qjs.ads			cf9480c7 EE NE OO PK IU
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W chore%s		chore.adb		chore.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20190518110050 76789da1 ada%s
+D a-tags.ads		20190518110050 2dde273c ada.tags%s
+D chore.ads		20191105202023 40361b3b chore%s
+D hal.ads		20191028100244 2b42c80e hal%s
+D hal-gpio.ads		20191028100244 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20191028100244 0ed73138 hal.i2c%s
+D hal-spi.ads		20191028100244 fe139819 hal.spi%s
+D hal-time.ads		20191028100244 f5295cd7 hal.time%s
+D hal-uart.ads		20191028100244 d58316b4 hal.uart%s
+D interfac.ads		20190518110050 5ab55268 interfaces%s
+D microbit.ads		20191028100244 c9bb1867 microbit%s
+D microbit-console.ads	20191028100244 0bb00661 microbit.console%s
+D microbit-time.ads	20191028100244 6bbc81c6 microbit.time%s
+D nrf51.ads		20191028100244 548f0fe8 nrf51%s
+D nrf51-device.ads	20191028100244 a7d15d54 nrf51.device%s
+D nrf51-gpio.ads	20191028100244 8e815cce nrf51.gpio%s
+D nrf51-rtc.ads		20191028100244 8c8bcaa7 nrf51.rtc%s
+D nrf51-spi_master.ads	20191028100244 24910ac0 nrf51.spi_master%s
+D nrf51-timers.ads	20191028100244 6db9a45c nrf51.timers%s
+D nrf51-twi.ads		20191028100244 c6a4f1a2 nrf51.twi%s
+D nrf51-uart.ads	20191028100244 bcd9b881 nrf51.uart%s
+D nrf51_svd.ads		20191028100244 a764dc2d nrf51_svd%s
+D nrf51_svd-rtc.ads	20191028100244 7ec0736e nrf51_svd.rtc%s
+D nrf51_svd-spi.ads	20191028100244 d8f87c63 nrf51_svd.spi%s
+D nrf51_svd-timer.ads	20191028100244 31dae6f3 nrf51_svd.timer%s
+D nrf51_svd-twi.ads	20191028100244 87adf514 nrf51_svd.twi%s
+D nrf51_svd-uart.ads	20191028100244 bc286d36 nrf51_svd.uart%s
+D qjs.ads		20191105145153 8fa29bfc qjs%s
+D qjs.adb		20191106101932 04cc205d qjs%b
+D system.ads		20190518110049 e69b74bd system%s
+D s-imgint.ads		20190518110050 02dbe0c2 system.img_int%s
+D s-stoele.ads		20190518110050 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20190518110050 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [run qjs 16 15 none]
+G c Z s s [Tchore_queueBIP qjs 7 5 none]
+G c Z s s [scheduleIP qjs 9 10 none]
+G r c none [run qjs 16 15 none] [put_line microbit__console 43 14 none]
+G r c none [run qjs 16 15 none] [execute chore 20 14 none]
+G r c none [run qjs 16 15 none] [new_line microbit__console 46 14 none]
+G r s chore [Tchore_queueBIP qjs 7 5 none] [choreIP chore 9 10 none]
+G r s chore [scheduleIP qjs 9 10 none] [choreIP chore 9 10 none]
+X 3 chore.ads
+3K9*chore 22e10 28|1w6 1r17 7r42
+9R10*chore 18e15 28|7r48
+11a9*task_name{string} 29|31r62 58r62 79r62 104r62 124r62
+12i9*id{integer} 29|30r55 57r55 78r55 103r55 123r55
+13m9*deadline{13|37M12} 29|33r75 60r75 81r75 106r75 126r75
+20V14*execute{integer} 29|33s46 60s46 81s46 106s46 126s46
+X 4 hal.ads
+160M9*UInt64<10|77M9>
+X 5 hal-gpio.ads
+47h9*GPIO_Point
+X 6 hal-i2c.ads
+48h9*I2C_Port
+X 7 hal-spi.ads
+48h9*SPI_Port
+X 8 hal-time.ads
+34h9*Delays
+X 9 hal-uart.ads
+48h9*UART_Port
+X 10 interfac.ads
+77M9*Unsigned_64
+X 11 microbit.ads
+35K9*MicroBit 70e13 29|1r6 31r16 32r16 35r16 58r16 59r16 61r16 79r16 80r16
+. 83r16 104r16 105r16 108r16 124r16 125r16 128r16
+X 12 microbit-console.ads
+32K18*Console 49e21 29|1w15 31r25 32r25 35r25 58r25 59r25 61r25 79r25 80r25
+. 83r25 104r25 105r25 108r25 124r25 125r25 128r25
+43U14*Put_Line 29|31s33 32s33 58s33 59s33 79s33 80s33 104s33 105s33 124s33
+. 125s33
+46U14*New_Line 29|35s33 61s33 83s33 108s33 128s33
+X 13 microbit-time.ads
+37M12*Time_Ms{4|160M9}
+X 28 qjs.ads
+4K9*QJS 19l5 19e8 29|3b14 149l5 149t8
+7A10*chore_queue(3|9R10)<integer> 11r23
+9R10*schedule 13e15 16p15 16r34 29|5r33
+11a9*major_queue{7A10} 29|30r40 31r47 33m31 33r60 57r40 58r47 60m31 60r60
+. 78r40 79r47 81m31 81r60 103r40 104r47 106m31 106r60 123r40 124r47 126m31
+. 126r60
+16U15*run 16=20 29|5b14 146l8 146t11
+16r20 Self{9R10} 29|5b19 30r35 31r42 33m26 33r26 33r55 57r35 58r42 60m26
+. 60r26 60r55 78r35 79r42 81m26 81r26 81r55 103r35 104r42 106m26 106r26 106r55
+. 123r35 124r42 126m26 126r26 126r55
+X 29 qjs.adb
+8i7 NB_q{integer} 15r37 26r32 44r39 48r49 63r39 65r39 90r39 92r39 111r39
+. 113r39 131r39 133r39
+9i7 NH_q{integer} 38r39 53r35 69r49
+10i7 SC_q{integer} 41r39 74r35 95r49
+11i7 TL_q{integer} 86r39 99r35 116r49
+12i7 TR_q{integer} 88r39 120r35 136r49
+15i7 current_queue_id{integer} 26r13 38m19 41m19 44m19 48r29 53r16 63m19
+. 65m19 69r29 74r16 86m19 88m19 90m19 92m19 95r29 99r16 111m19 113m19 116r29
+. 120r16 131m19 133m19 136r29
+17i7 Answer{integer} 33m16 37r43 40r46 43r22 60m16 62r43 64r22 81m16 85r43
+. 87r46 91r22 106m16 110r19 126m16 130r19
+18i7 current_task_id{integer} 30m16 32r57 37r19 40r22 57m16 59r57 62r19 78m16
+. 80r57 85r19 87r22 89r22 103m16 105r57 123m16 125r57
+28l13 NB 48r21 49l22 49e24
+29i17 I{integer} 30r52 31r59 33r43 33r72
+55l13 NH 69r21 70l22 70e24
+56i17 I{integer} 57r52 58r59 60r43 60r72
+76l13 SC 95r21 96l22 96e24
+77i17 I{integer} 78r52 79r59 81r43 81r72
+101l13 TL 116r21 117l22 117e24
+102i17 I{integer} 103r52 104r59 106r43 106r72
+121l13 TR 136r21 137l22 137e24
+122i17 I{integer} 123r52 124r59 126r43 126r72
+

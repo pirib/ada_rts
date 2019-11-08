@@ -1,0 +1,141 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U accelerometer%b	accelerometer.adb	98d65fad NE OO PK IL
+W microbit%s		microbit.ads		microbit.ali
+W microbit.accelerometer%s  microbit-accelerometer.adb  microbit-accelerometer.ali
+W microbit.display%s	microbit-display.adb	microbit-display.ali
+W mma8653%s		mma8653.adb		mma8653.ali
+
+U accelerometer%s	accelerometer.ads	1e520488 EE NE OO PK IL
+W microbit%s		microbit.ads		microbit.ali
+W microbit.time%s	microbit-time.adb	microbit-time.ali
+
+D accelerometer.ads	20191105145153 75ee854e accelerometer%s
+D accelerometer.adb	20191105145153 423a3a4e accelerometer%b
+D ada.ads		20190518110050 76789da1 ada%s
+D a-tags.ads		20190518110050 2dde273c ada.tags%s
+D a-unccon.ads		20190518110050 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20191028100244 2b42c80e hal%s
+D hal-gpio.ads		20191028100244 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20191028100244 0ed73138 hal.i2c%s
+D hal-spi.ads		20191028100244 fe139819 hal.spi%s
+D hal-time.ads		20191028100244 f5295cd7 hal.time%s
+D hal-uart.ads		20191028100244 d58316b4 hal.uart%s
+D interfac.ads		20190518110050 5ab55268 interfaces%s
+D microbit.ads		20191028100244 c9bb1867 microbit%s
+D microbit-accelerometer.ads  20191028100244 243a93d2 microbit.accelerometer%s
+D microbit-display.ads	20191028100244 74556d74 microbit.display%s
+D microbit-time.ads	20191028100244 6bbc81c6 microbit.time%s
+D mma8653.ads		20191028100244 ff6d1e0b mma8653%s
+D nrf51.ads		20191028100244 548f0fe8 nrf51%s
+D nrf51-device.ads	20191028100244 a7d15d54 nrf51.device%s
+D nrf51-gpio.ads	20191028100244 8e815cce nrf51.gpio%s
+D nrf51-rtc.ads		20191028100244 8c8bcaa7 nrf51.rtc%s
+D nrf51-spi_master.ads	20191028100244 24910ac0 nrf51.spi_master%s
+D nrf51-timers.ads	20191028100244 6db9a45c nrf51.timers%s
+D nrf51-twi.ads		20191028100244 c6a4f1a2 nrf51.twi%s
+D nrf51-uart.ads	20191028100244 bcd9b881 nrf51.uart%s
+D nrf51_svd.ads		20191028100244 a764dc2d nrf51_svd%s
+D nrf51_svd-rtc.ads	20191028100244 7ec0736e nrf51_svd.rtc%s
+D nrf51_svd-spi.ads	20191028100244 d8f87c63 nrf51_svd.spi%s
+D nrf51_svd-timer.ads	20191028100244 31dae6f3 nrf51_svd.timer%s
+D nrf51_svd-twi.ads	20191028100244 87adf514 nrf51_svd.twi%s
+D nrf51_svd-uart.ads	20191028100244 bc286d36 nrf51_svd.uart%s
+D system.ads		20190518110049 e69b74bd system%s
+D s-stoele.ads		20190518110050 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20190518110050 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [initialize accelerometer 12 15 none]
+G c Z s b [initialized accelerometer 13 14 none]
+G c Z s b [show_on_display accelerometer 15 15 none]
+G c Z s b [get_x accelerometer 17 14 none]
+G c Z s b [get_y accelerometer 18 14 none]
+G c Z s b [get_z accelerometer 19 14 none]
+G c Z s b [check_acc accelerometer 21 14 none]
+G r c none [show_on_display accelerometer 15 15 none] [clear microbit__display 42 14 none]
+G r c none [show_on_display accelerometer 15 15 none] [data microbit__accelerometer 43 13 none]
+G r c none [show_on_display accelerometer 15 15 none] [set microbit__display 36 14 none]
+G r c none [get_x accelerometer 17 14 none] [data microbit__accelerometer 43 13 none]
+G r c none [get_y accelerometer 18 14 none] [data microbit__accelerometer 43 13 none]
+G r c none [get_z accelerometer 19 14 none] [data microbit__accelerometer 43 13 none]
+G r c none [check_acc accelerometer 21 14 none] [clock microbit__time 39 13 none]
+G r c none [check_acc accelerometer 21 14 none] [data microbit__accelerometer 43 13 none]
+X 1 accelerometer.ads
+4K9*accelerometer 23l5 23e18 2|7b14 82l5 82t18
+6I10*acc_data<short_integer> 9r26 10r26 17r27 18r27 19r27 2|53r27 55r16 59r27
+. 61r16 65r27 67r16
+9i5*tilt_max_y{6I10}
+10i5*tilt_min_y{6I10}
+12U15*Initialize 2|10b15
+13V14*Initialized{boolean} 2|11b14
+15U15*show_on_display 2|18b15 49l9 49t24
+17V14*get_x{6I10} 2|53b14 56l9 56t14
+18V14*get_y{6I10} 2|59b14 62l9 62t14 75s28
+19V14*get_z{6I10} 2|65b14 68l9 68t14
+21V14*check_acc{integer} 21>25 2|71b14 79l9 79t18
+21m25 Deadline{16|37M12} 2|71b25 74r50
+X 2 accelerometer.adb
+14i5 dx{integer} 24m13 26m13 28m13 30m13 32m13 47r30
+15i5 dy{integer} 36m13 38m13 40m13 42m13 44m13 47r33
+72m9 start_time{16|37M12} 74r37
+X 6 hal.ads
+160M9*UInt64<12|77M9>
+X 7 hal-gpio.ads
+47h9*GPIO_Point
+X 8 hal-i2c.ads
+48h9*I2C_Port
+X 9 hal-spi.ads
+48h9*SPI_Port
+X 10 hal-time.ads
+34h9*Delays
+X 11 hal-uart.ads
+48h9*UART_Port
+X 12 interfac.ads
+77M9*Unsigned_64
+X 13 microbit.ads
+35K9*MicroBit 1|1r6 1r33 21r36 2|3r6 4r6 4r36 10r34 11r49 21r9 47r9 71r36
+. 72r31 72r56 74r15 13|70e13
+X 14 microbit-accelerometer.ads
+34K18*Accelerometer 2|4w15 4r45 10r43 11r58 14|46e27
+36V13*Initialized{boolean} 2|11r72
+39U14*Initialize 2|10r57
+43V13*Data{17|58R9} 2|23s12 25s15 25s33 27s15 27s32 29s15 29s31 31s15 35s12
+. 37s15 37s33 39s15 39s32 41s15 41s31 43s15 55s25 61s25 67s25
+X 15 microbit-display.ads
+32K18*Display 2|3w15 21r18 47r18 15|69e21
+36U14*Set 2|47s26
+42U14*Clear 2|21s26
+X 16 microbit-time.ads
+35K18*Time 1|1w15 1r42 21r45 2|71r45 72r40 72r65 74r24 16|81e18
+37M12*Time_Ms{6|160M9} 1|1r47 21r50 2|71r50 72r45
+39V13*Clock{37M12} 2|72s70 74s29
+X 17 mma8653.ads
+37K9*MMA8653 2|5w6 5r36 17|144e12
+55I9*Axis_Data<short_integer>
+59i7*X{55I9} 2|23r17 25r20 25r38 27r20 27r37 29r20 29r36 31r20 55r30
+59i10*Y{55I9} 2|35r17 37r20 37r38 39r20 39r37 41r20 41r36 43r20 61r30
+59i13*Z{55I9} 2|67r30
+

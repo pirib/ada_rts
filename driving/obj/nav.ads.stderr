@@ -1,0 +1,2 @@
+cannot generate code for file nav.ads (package spec)
+nav.ads:1:14: warning: no entities of "MicroBit.IOs" are referenced

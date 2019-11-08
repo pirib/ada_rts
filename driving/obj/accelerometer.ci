@@ -1,0 +1,44 @@
+graph: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb"
+node: { title: "microbit__time__clock" label: "Clock\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-time.ads:39:13" shape : ellipse }
+node: { title: "microbit__display__set" label: "Set\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-display.ads:36:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "microbit__accelerometer__data" label: "Data\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-accelerometer.ads:43:13" shape : ellipse }
+node: { title: "microbit__display__clear__2" label: "Clear\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-display.ads:42:14" shape : ellipse }
+node: { title: "microbit__accelerometer__initialized" label: "Initialized\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-accelerometer.ads:36:13" shape : ellipse }
+node: { title: "microbit__accelerometer__initialize" label: "Initialize\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-accelerometer.ads:39:14" shape : ellipse }
+node: { title: "accelerometer__check_acc" label: "check_acc\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:71:5\n32 bytes (static)" }
+edge: { sourcename: "accelerometer__check_acc" targetname: "accelerometer__get_y" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:75:28" }
+edge: { sourcename: "accelerometer__check_acc" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:74:28" }
+edge: { sourcename: "accelerometer__check_acc" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:72:9" }
+node: { title: "accelerometer__get_z" label: "get_z\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:65:5\n16 bytes (static)" }
+edge: { sourcename: "accelerometer__get_z" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:67:25" }
+node: { title: "accelerometer__get_y" label: "get_y\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:59:5\n16 bytes (static)" }
+edge: { sourcename: "accelerometer__get_y" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:61:25" }
+node: { title: "accelerometer__get_x" label: "get_x\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:53:5\n16 bytes (static)" }
+edge: { sourcename: "accelerometer__get_x" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:55:25" }
+node: { title: "accelerometer__show_on_display" label: "show_on_display\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:18:5\n144 bytes (static)" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__display__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:47:25" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "__gnat_last_chance_handler" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:47:33" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "__gnat_last_chance_handler" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:47:30" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:43:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:41:31" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:41:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:39:32" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:39:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:37:33" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:37:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:35:12" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:31:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:29:31" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:29:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:27:32" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:27:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:25:33" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:25:15" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__accelerometer__data" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:23:12" }
+edge: { sourcename: "accelerometer__show_on_display" targetname: "microbit__display__clear__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:21:25" }
+node: { title: "accelerometer__initialized" label: "initialized\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:11:14\n8 bytes (static)" }
+edge: { sourcename: "accelerometer__initialized" targetname: "microbit__accelerometer__initialized" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:11:14" }
+node: { title: "accelerometer__initialize" label: "initialize\n/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:10:15\n8 bytes (static)" }
+edge: { sourcename: "accelerometer__initialize" targetname: "microbit__accelerometer__initialize" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/accelerometer.adb:10:15" }
+}

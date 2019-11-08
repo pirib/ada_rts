@@ -1,0 +1,15 @@
+graph: { title: "F:\Code\Git\ada_project\driving\src\drive.adb"
+node: { title: "microbit__ios__set" label: "Set\nF:\Code\Git\ada_project\Ada_Drivers_Library\boards\MicroBit\src\microbit-ios.ads:52:14" shape : ellipse }
+node: { title: "drive__right" label: "Right\nF:\Code\Git\ada_project\driving\src\drive.adb:21:5\n16 bytes (static)" }
+edge: { sourcename: "drive__right" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:24:21" }
+edge: { sourcename: "drive__right" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:23:21" }
+node: { title: "drive__left" label: "Left\nF:\Code\Git\ada_project\driving\src\drive.adb:15:5\n16 bytes (static)" }
+edge: { sourcename: "drive__left" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:18:21" }
+edge: { sourcename: "drive__left" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:17:21" }
+node: { title: "drive__backward" label: "Backward\nF:\Code\Git\ada_project\driving\src\drive.adb:9:5\n16 bytes (static)" }
+edge: { sourcename: "drive__backward" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:12:21" }
+edge: { sourcename: "drive__backward" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:11:21" }
+node: { title: "drive__forward" label: "Forward\nF:\Code\Git\ada_project\driving\src\drive.adb:3:5\n16 bytes (static)" }
+edge: { sourcename: "drive__forward" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:6:21" }
+edge: { sourcename: "drive__forward" targetname: "microbit__ios__set" label: "F:\Code\Git\ada_project\driving\src\drive.adb:5:21" }
+}

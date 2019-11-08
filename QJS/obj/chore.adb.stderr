@@ -1,0 +1,2 @@
+chore.adb:13:09: warning: "return" statement missing following this statement
+chore.adb:13:09: warning: Program_Error may be raised at run time

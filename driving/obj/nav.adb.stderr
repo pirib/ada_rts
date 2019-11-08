@@ -1,0 +1,8 @@
+nav.adb:61:14: warning: procedure "write_to_m1" is not referenced
+nav.adb:70:14: warning: procedure "write_to_m2" is not referenced
+nav.adb:81:19: warning: pragma Unreferenced given for "zero"
+nav.adb:82:19: warning: pragma Unreferenced given for "zero"
+nav.adb:96:22: warning: pragma Unreferenced given for "zero"
+nav.adb:97:22: warning: pragma Unreferenced given for "zero"
+nav.adb:110:22: warning: pragma Unreferenced given for "med"
+nav.adb:111:22: warning: pragma Unreferenced given for "med"

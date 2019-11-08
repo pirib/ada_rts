@@ -1,0 +1,30 @@
+[MAPPING FILE]
+C:\Users\Piri\AppData\Local\Temp\GNAT-TEMP-000002.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2019
+[MAIN BASE NAME]
+drive
+[COMPILER PATH]
+d:\software\gnatelf\bin\arm-eabi-gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+--RTS=D:\software\gnatelf\arm-eabi\lib\gnat\zfp-cortex-m0\
+-mlittle-endian
+-mthumb
+-msoft-float
+-mcpu=cortex-m0
+[MAIN DEPENDENCY FILE]
+F:\Code\Git\ada_project\driving\obj\drive.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=arm-eabi-
+--RTS=D:\software\gnatelf\arm-eabi\lib\gnat\zfp-cortex-m0\
+[PROJECT FILES]
+F:\Code\Git\ada_project\driving\digital_out.gpr
+20190930093638
+F:\Code\Git\ada_project\Ada_Drivers_Library\boards\MicroBit\microbit_zfp.gpr
+20190914074758

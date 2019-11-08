@@ -1,0 +1,93 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=D:\software\gnatelf\arm-eabi\lib\gnat\zfp-cortex-m0\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U drive%b		drive.adb		5a704744 NE OO PK
+
+U drive%s		drive.ads		a39696fd EE NE OO PK
+W microbit%s		microbit.ads		microbit.ali
+W microbit.ios%s	microbit-ios.adb	microbit-ios.ali
+
+D ada.ads		20190518152826 76789da1 ada%s
+D a-tags.ads		20190518152826 2dde273c ada.tags%s
+D drive.ads		20190930095054 60d9bd30 drive%s
+D drive.adb		20190930125954 3aa9fa74 drive%b
+D hal.ads		20190914074758 2b42c80e hal%s
+D hal-gpio.ads		20190914074758 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20190914074758 0ed73138 hal.i2c%s
+D hal-spi.ads		20190914074758 fe139819 hal.spi%s
+D interfac.ads		20190518152826 5ab55268 interfaces%s
+D microbit.ads		20190914074758 4ce6a4c2 microbit%s
+D microbit-ios.ads	20190914074758 c34f2bcd microbit.ios%s
+D nrf51.ads		20190914074758 548f0fe8 nrf51%s
+D nrf51-device.ads	20190914074758 3066f1b0 nrf51.device%s
+D nrf51-gpio.ads	20190914074758 8e815cce nrf51.gpio%s
+D nrf51-rtc.ads		20190914074758 8c8bcaa7 nrf51.rtc%s
+D nrf51-spi_master.ads	20190914074758 24910ac0 nrf51.spi_master%s
+D nrf51-timers.ads	20190914074758 6db9a45c nrf51.timers%s
+D nrf51-twi.ads		20190914074758 c6a4f1a2 nrf51.twi%s
+D nrf51_svd.ads		20190914074758 a764dc2d nrf51_svd%s
+D nrf51_svd-rtc.ads	20190914074758 7ec0736e nrf51_svd.rtc%s
+D nrf51_svd-spi.ads	20190914074758 d8f87c63 nrf51_svd.spi%s
+D nrf51_svd-timer.ads	20190914074758 31dae6f3 nrf51_svd.timer%s
+D nrf51_svd-twi.ads	20190914074758 87adf514 nrf51_svd.twi%s
+D system.ads		20190518152826 e69b74bd system%s
+D s-stoele.ads		20190518152826 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20190518152826 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [forward drive 5 15 none]
+G c Z s b [backward drive 6 15 none]
+G c Z s b [left drive 7 15 none]
+G c Z s b [right drive 8 15 none]
+G r c none [forward drive 5 15 none] [set microbit__ios 52 14 none]
+G r c none [backward drive 6 15 none] [set microbit__ios 52 14 none]
+G r c none [left drive 7 15 none] [set microbit__ios 52 14 none]
+G r c none [right drive 8 15 none] [set microbit__ios 52 14 none]
+X 3 drive.ads
+3K9*Drive 10l5 10e10 4|1b14 27l5 27t10
+5U15*forward 5>23 5>39 4|3b15 7l9 7t16
+5i23 le_pin{11|36I9} 4|3b23 5r27
+5i39 re_pin{11|36I9} 4|3b39 6r27
+6U15*backward 6>24 6>40 4|9b15 13l9 13t17
+6i24 le_pin{11|36I9} 4|9b24 11r27
+6i40 re_pin{11|36I9} 4|9b40 12r27
+7U15*left 7>20 7>36 4|15b15 19l9 19t13
+7i20 le_pin{11|36I9} 4|15b20 17r27
+7i36 re_pin{11|36I9} 4|15b36 18r27
+8U15*right 8>21 8>37 4|21b15 25l9 25t14
+8i21 le_pin{11|36I9} 4|21b21 23r27
+8i37 re_pin{11|36I9} 4|21b37 24r27
+X 6 hal-gpio.ads
+47h9*GPIO_Point
+X 7 hal-i2c.ads
+48h9*I2C_Port
+X 8 hal-spi.ads
+48h9*SPI_Port
+X 10 microbit.ads
+35K9*MicroBit 3|1r6 1r24 4|5r9 6r9 11r9 12r9 17r9 18r9 23r9 24r9 10|67e13
+X 11 microbit-ios.ads
+34K18*IOs 3|1w15 1r33 4|5r18 6r18 11r18 12r18 17r18 18r18 23r18 24r18 11|98e17
+36I9*Pin_Id<short_short_integer> 3|5r31 5r47 6r32 6r48 7r28 7r44 8r29 8r45
+. 4|3r31 3r47 9r32 9r48 15r28 15r44 21r29 21r45
+52U14*Set 4|5s22 6s22 11s22 12s22 17s22 18s22 23s22 24s22
+

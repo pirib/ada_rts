@@ -1,0 +1,32 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=D:\software\gnatelf\arm-eabi\lib\gnat\zfp-cortex-m0\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U predeftypes%s		predeftypes.ads		45736d7e NE OO PK
+
+D predeftypes.ads	20190930085644 45736d7e predeftypes%s
+D system.ads		20190518152826 e69b74bd system%s
+G a e
+X 1 predeftypes.ads
+1K9*PreDefTypes 5l5 5e16
+3I10*Pin<short_short_integer>
+

@@ -1,0 +1,108 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U chore%b		chore.adb		772a1143 NE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+U chore%s		chore.ads		2b8a9afd EE NE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W microbit%s		microbit.ads		microbit.ali
+W microbit.time%s	microbit-time.adb	microbit-time.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20190518110050 76789da1 ada%s
+D a-tags.ads		20190518110050 2dde273c ada.tags%s
+D chore.ads		20191105202023 40361b3b chore%s
+D chore.adb		20191105202403 371c0a78 chore%b
+D hal.ads		20191028100244 2b42c80e hal%s
+D hal-gpio.ads		20191028100244 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20191028100244 0ed73138 hal.i2c%s
+D hal-spi.ads		20191028100244 fe139819 hal.spi%s
+D hal-time.ads		20191028100244 f5295cd7 hal.time%s
+D hal-uart.ads		20191028100244 d58316b4 hal.uart%s
+D interfac.ads		20190518110050 5ab55268 interfaces%s
+D microbit.ads		20191028100244 c9bb1867 microbit%s
+D microbit-time.ads	20191028100244 6bbc81c6 microbit.time%s
+D nrf51.ads		20191028100244 548f0fe8 nrf51%s
+D nrf51-device.ads	20191028100244 a7d15d54 nrf51.device%s
+D nrf51-gpio.ads	20191028100244 8e815cce nrf51.gpio%s
+D nrf51-rtc.ads		20191028100244 8c8bcaa7 nrf51.rtc%s
+D nrf51-spi_master.ads	20191028100244 24910ac0 nrf51.spi_master%s
+D nrf51-timers.ads	20191028100244 6db9a45c nrf51.timers%s
+D nrf51-twi.ads		20191028100244 c6a4f1a2 nrf51.twi%s
+D nrf51-uart.ads	20191028100244 bcd9b881 nrf51.uart%s
+D nrf51_svd.ads		20191028100244 a764dc2d nrf51_svd%s
+D nrf51_svd-rtc.ads	20191028100244 7ec0736e nrf51_svd.rtc%s
+D nrf51_svd-spi.ads	20191028100244 d8f87c63 nrf51_svd.spi%s
+D nrf51_svd-timer.ads	20191028100244 31dae6f3 nrf51_svd.timer%s
+D nrf51_svd-twi.ads	20191028100244 87adf514 nrf51_svd.twi%s
+D nrf51_svd-uart.ads	20191028100244 bc286d36 nrf51_svd.uart%s
+D system.ads		20190518110049 e69b74bd system%s
+D s-stoele.ads		20190518110050 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20190518110050 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [execute chore 20 14 none]
+G c Z s s [choreIP chore 9 10 none]
+X 3 chore.ads
+3K9*chore 22l5 22e10 4|3b14 46l5 46t10
+5P10*function_pointer(integer) 5>48 16r17
+5m48 Deadline{13|37M12}
+9R10*chore 18e15 20p14 20r37 4|5r36
+11a9*task_name{string}
+12i9*id{integer} 4|14r15 23r18 23r33 23r48 32r18 32r33 32r48 32r63 32r78
+13m9*deadline{13|37M12}
+16p9*errand{5P10} 4|11r20
+20V14*execute{integer} 20=23 20>45 4|5b13 41l8 41t15
+20r23 Self{9R10} 4|5b22 11r15 14r10 23r13 23r28 23r43 32r13 32r28 32r43 32r58
+. 32r73
+20m45 Deadline{13|37M12} 4|5b44 11r31
+X 4 chore.adb
+6i7 temp{integer} 11m7 16r13 16r35 25r13
+7i7 tilt_y_max{integer} 16r20
+8i7 tilt_y_min{integer} 16r42
+9i7 distance_in_ms{integer} 25r20
+X 5 hal.ads
+160M9*UInt64<11|77M9>
+X 6 hal-gpio.ads
+47h9*GPIO_Point
+X 7 hal-i2c.ads
+48h9*I2C_Port
+X 8 hal-spi.ads
+48h9*SPI_Port
+X 9 hal-time.ads
+34h9*Delays
+X 10 hal-uart.ads
+48h9*UART_Port
+X 11 interfac.ads
+77M9*Unsigned_64
+X 12 microbit.ads
+35K9*MicroBit 3|1r6 5r59 13r27 20r56 4|5r55 12|70e13
+X 13 microbit-time.ads
+35K18*Time 3|1w15 5r68 13r36 20r65 4|5r64 13|81e18
+37M12*Time_Ms{5|160M9} 3|5r73 13r41 20r70 4|5r69
+

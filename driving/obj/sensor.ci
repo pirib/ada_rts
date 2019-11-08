@@ -1,0 +1,87 @@
+edge: { sourcename: "sensor__read"
+  targetname: "1:hal__time__delays,hal__time__delays"
+  label: "sensor.adb:24:30"
+}
+edge: { sourcename: "sensor__read"
+  targetname: "1:hal__time__delays,hal__time__delays"
+  label: "sensor.adb:27:30"
+}
+edge: { sourcename: "sensor__read"
+  targetname: "1:hal__time__delays,hal__time__delays"
+  label: "sensor.adb:34:36"
+}
+edge: { sourcename: "sensor__read__2"
+  targetname: "1:hal__time__delays,hal__time__delays"
+  label: "sensor.adb:54:30"
+}
+edge: { sourcename: "sensor__read__2"
+  targetname: "1:hal__time__delays,hal__time__delays"
+  label: "sensor.adb:57:30"
+}
+edge: { sourcename: "sensor__read__2"
+  targetname: "1:hal__time__delays,hal__time__delays"
+  label: "sensor.adb:64:36"
+}
+graph: { title: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb"
+node: { title: "microbit__time__delay_ms" label: "Delay_Ms\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-time.ads:41:14" shape : ellipse }
+node: { title: "microbit__servos__go" label: "Go\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-servos.ads:46:14" shape : ellipse }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\n/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/gnat/s-assert.ads:46:14" shape : ellipse }
+node: { title: "microbit__servos__servo_pin_idPredicate" label: "Servo_Pin_Idpredicate\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-servos.ads:38:12" shape : ellipse }
+node: { title: "system__img_int__image_integer" label: "Image_Integer\n/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/gnat/s-imgint.ads:39:14" shape : ellipse }
+node: { title: "microbit__console__put_line" label: "Put_Line\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-console.ads:43:14" shape : ellipse }
+node: { title: "microbit__time__clock" label: "Clock\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-time.ads:39:13" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "microbit__ios__set__2" label: "Set\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-ios.ads:55:13" shape : ellipse }
+node: { title: "microbit__time__hal_delay" label: "Hal_Delay\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-time.ads:64:13" shape : ellipse }
+node: { title: "microbit__ios__set" label: "Set\n/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/src/microbit-ios.ads:52:14" shape : ellipse }
+node: { title: "sensor__sensor_right" label: "Sensor_Right\n/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:96:4\n24 bytes (static)" }
+edge: { sourcename: "sensor__sensor_right" targetname: "sensor__read__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:101:7" }
+edge: { sourcename: "sensor__sensor_right" targetname: "microbit__time__delay_ms" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:99:20" }
+edge: { sourcename: "sensor__sensor_right" targetname: "microbit__servos__go" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:98:22" }
+edge: { sourcename: "sensor__sensor_right" targetname: "system__assertions__raise_assert_failure" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:98:26" }
+edge: { sourcename: "sensor__sensor_right" targetname: "microbit__servos__servo_pin_idPredicate" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:98:26" }
+node: { title: "sensor__sensor_left" label: "Sensor_Left\n/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:89:4\n24 bytes (static)" }
+edge: { sourcename: "sensor__sensor_left" targetname: "sensor__read__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:93:7" }
+edge: { sourcename: "sensor__sensor_left" targetname: "microbit__time__delay_ms" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:92:20" }
+edge: { sourcename: "sensor__sensor_left" targetname: "microbit__servos__go" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:91:22" }
+edge: { sourcename: "sensor__sensor_left" targetname: "system__assertions__raise_assert_failure" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:91:26" }
+edge: { sourcename: "sensor__sensor_left" targetname: "microbit__servos__servo_pin_idPredicate" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:91:26" }
+node: { title: "sensor__sensor_straight" label: "Sensor_Straight\n/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:80:4\n24 bytes (static)" }
+edge: { sourcename: "sensor__sensor_straight" targetname: "sensor__read__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:86:7" }
+edge: { sourcename: "sensor__sensor_straight" targetname: "microbit__time__delay_ms" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:83:20" }
+edge: { sourcename: "sensor__sensor_straight" targetname: "microbit__servos__go" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:82:22" }
+edge: { sourcename: "sensor__sensor_straight" targetname: "system__assertions__raise_assert_failure" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:82:26" }
+edge: { sourcename: "sensor__sensor_straight" targetname: "microbit__servos__servo_pin_idPredicate" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:82:26" }
+node: { title: "sensor__read__2" label: "Read\n/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:47:4\n80 bytes (static)" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__console__put_line" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:74:23" }
+edge: { sourcename: "sensor__read__2" targetname: "system__img_int__image_integer" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:74:47" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__console__put_line" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:73:23" }
+edge: { sourcename: "sensor__read__2" targetname: "__gnat_last_chance_handler" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:67:53" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__ios__set__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:66:28" }
+edge: { sourcename: "sensor__read__2" targetname: "__indirect_call" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:64:36" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__time__hal_delay" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:64:26" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__ios__set__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:62:25" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:60:26" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:58:19" }
+edge: { sourcename: "sensor__read__2" targetname: "__indirect_call" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:57:30" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__time__hal_delay" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:57:20" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:56:19" }
+edge: { sourcename: "sensor__read__2" targetname: "__indirect_call" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:54:30" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__time__hal_delay" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:54:20" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:53:19" }
+edge: { sourcename: "sensor__read__2" targetname: "microbit__time__clock" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:48:7" }
+node: { title: "sensor__read" label: "Read\n/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:18:4\n8 bytes (static)" }
+edge: { sourcename: "sensor__read" targetname: "__gnat_last_chance_handler" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:36:53" }
+edge: { sourcename: "sensor__read" targetname: "microbit__ios__set__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:35:28" }
+edge: { sourcename: "sensor__read" targetname: "__indirect_call" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:34:36" }
+edge: { sourcename: "sensor__read" targetname: "microbit__time__hal_delay" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:34:26" }
+edge: { sourcename: "sensor__read" targetname: "microbit__ios__set__2" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:32:25" }
+edge: { sourcename: "sensor__read" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:28:19" }
+edge: { sourcename: "sensor__read" targetname: "__indirect_call" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:27:30" }
+edge: { sourcename: "sensor__read" targetname: "microbit__time__hal_delay" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:27:20" }
+edge: { sourcename: "sensor__read" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:26:19" }
+edge: { sourcename: "sensor__read" targetname: "__indirect_call" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:24:30" }
+edge: { sourcename: "sensor__read" targetname: "microbit__time__hal_delay" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:24:20" }
+edge: { sourcename: "sensor__read" targetname: "microbit__ios__set" label: "/home/nico/Downloads/Real-Time-Systems/driving/src/sensor.adb:23:19" }
+}

@@ -1,0 +1,26 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/home/nico/Downloads/Real-Time-Systems/driving/digital_out.gpr
+20191105145946
+/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/microbit_zfp.gpr
+20191028100244
+[BOUND OBJECT FILES]
+/home/nico/Downloads/Real-Time-Systems/driving/obj/chore.o
+/home/nico/Downloads/Real-Time-Systems/driving/obj/accelerometer.o
+/home/nico/Downloads/Real-Time-Systems/driving/obj/nav.o
+/home/nico/Downloads/Real-Time-Systems/driving/obj/qjs.o
+/home/nico/Downloads/Real-Time-Systems/driving/obj/sensor.o
+/home/nico/Downloads/Real-Time-Systems/driving/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/home/nico/Downloads/Real-Time-Systems/driving/obj/
+-L/home/nico/Downloads/Real-Time-Systems/driving/obj/
+-L/home/nico/Downloads/Real-Time-Systems/Ada_Drivers_Library/boards/MicroBit/obj/zfp_lib_Debug/
+-L/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/adalib/
+-static
+-static-libgcc
+/home/nico/opt/GNAT/2019-arm-elf/arm-eabi/lib/gnat/zfp-cortex-m0/adalib/libgnat.a
